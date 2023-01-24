@@ -771,7 +771,7 @@ There are different mechanisms by which terms aggregations can be executed:
 
 Elasticsearch tries to have sensible defaults so this is something that generally doesn't need to be configured.
 
-`global_ordinals` is the default option for `keyword` field, it uses global ordinals to allocates buckets dynamically
+`global_ordinals` is the default option for `keyword` field, it uses global ordinals to allocate buckets dynamically
 so memory usage is linear to the number of values of the documents that are part of the aggregation scope.
 
 `map` should only be considered when very few documents match a query. Otherwise the ordinals-based execution mode
